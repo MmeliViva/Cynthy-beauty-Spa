@@ -131,14 +131,74 @@
 
 
         <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb py-5">
-            <div class="container text-center py-5">
-                <h3 class="text-white display-3 mb-4">About Us</h1>
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <!--<li class="breadcrumb-item"><a href="#">Pages</a></li>-->
-                    <li class="breadcrumb-item active text-white">About Us</li>
-                </ol>    
+        <div class="container-fluid carousel-header px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img\Bio Scupture.jpeg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">Cynthy Beauty Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Bio Sculpture</h1>
+                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Give your natural nails a beautiful, well-groomed finish with
+                                            Bio Sculpture Gel. This treatment provides a flexible,
+                                            durable gel coating designed to support natural nail growth
+                                            while delivering a glossy, long-lasting finish. Ideal for
+                                            clients who want elegant nails with added strength and style</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\manicurecynthy.jpeg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Cynthy Beauty Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Manicure</h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Keep your hands and nails looking their best with a manicure
+                                            that includes nail shaping, cuticle care and a neat finish.
+                                            Perfect for maintaining healthy-looking nails with a clean,
+                                            elegant appearance.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\Gel toes.jpeg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Cynthy Beauty Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark">Pedicure</h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Treat your feet to a refreshing pedicure that focuses on nail
+                                                care, shaping, cuticle care and a polished finish. Enjoy neat,
+                                                beautifully groomed toes and a clean, well-maintained look.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <!-- Header End -->
