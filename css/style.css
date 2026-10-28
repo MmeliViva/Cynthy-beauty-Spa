@@ -218,6 +218,66 @@
 }
 /*** Carousel End ***/
 
+.service-page .navbar-brand h1 {
+    color: #e94d8a;
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+.service-page .carousel-caption {
+    background: linear-gradient(rgba(255, 249, 246, 0.58), rgba(255, 249, 246, 0.58));
+}
+
+.service-page .carousel-caption h4 {
+    color: #b44470 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+    font-weight: 600;
+    letter-spacing: 0.22em;
+}
+
+.service-page .carousel-caption h1 {
+    color: #35292b !important;
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.service-page .carousel-caption p {
+    max-width: 760px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    color: #44383a !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+    line-height: 1.65;
+}
+
+.service-page .services > .container > .mx-auto > p {
+    color: #b44470 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.service-page .services > .container > .mx-auto h1,
+.service-page .services .services-content h3 {
+    color: #35292b;
+    font-family: 'PT Serif', Georgia, serif;
+    font-weight: 700;
+}
+
+.service-page .services .services-content p {
+    color: #5c5052;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+}
+
 
 .bg-breadcrumb {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/appointment-background.jpg);
