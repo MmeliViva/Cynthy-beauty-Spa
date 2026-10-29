@@ -1,7 +1,13 @@
 
 /*** Spinner Start ***/
+:root {
+    --bs-dark: #5b3e4c;
+    --bs-body-color: #5c4d53;
+}
+
 body {
     font-family: 'Inter', 'Open Sans', sans-serif;
+    color: var(--bs-body-color);
 }
 
 h1,
@@ -12,6 +18,11 @@ h5,
 h6,
 .navbar-brand h1 {
     font-family: 'Playfair Display', 'PT Serif', Georgia, serif;
+    color: #654858;
+}
+
+.text-dark {
+    color: #5b3e4c !important;
 }
 
 #spinner {
@@ -252,7 +263,7 @@ h6,
 }
 
 .service-page .carousel-caption h1 {
-    color: #35292b !important;
+    color: #654858 !important;
     font-family: 'PT Serif', Georgia, serif;
     font-size: clamp(2.75rem, 6vw, 4.5rem);
     font-weight: 700;
@@ -281,13 +292,13 @@ h6,
 
 .service-page .services > .container > .mx-auto h1,
 .service-page .services .services-content h3 {
-    color: #35292b;
+    color: #654858;
     font-family: 'PT Serif', Georgia, serif;
     font-weight: 700;
 }
 
 .service-page .services .services-content p {
-    color: #5c5052;
+    color: #5c4d53;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
 }
