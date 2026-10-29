@@ -1,5 +1,19 @@
 
 /*** Spinner Start ***/
+body {
+    font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand h1 {
+    font-family: 'Playfair Display', 'PT Serif', Georgia, serif;
+}
+
 #spinner {
     opacity: 0;
     visibility: hidden;
