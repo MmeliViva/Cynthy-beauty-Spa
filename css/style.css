@@ -856,3 +856,250 @@
     }
 }
 /*** Price List End ***/
+
+/*** Home Page Feature Sections ***/
+.home-about-section {
+    background: linear-gradient(135deg, #fff8fb 0%, #ffffff 68%);
+}
+
+.home-about-visual {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 42px 44px 0;
+}
+
+.home-about-main {
+    display: block;
+    width: 100%;
+    height: 470px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 18px 45px rgba(28, 26, 29, 0.14);
+}
+
+.home-about-detail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 42%;
+    height: 190px;
+    border: 7px solid var(--bs-white);
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 12px 30px rgba(28, 26, 29, 0.14);
+}
+
+.home-about-badge {
+    position: absolute;
+    right: 5%;
+    top: 24px;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: var(--bs-white);
+    color: var(--bs-secondary);
+    box-shadow: 0 8px 24px rgba(28, 26, 29, 0.12);
+    font-weight: 600;
+}
+
+.home-about-copy > p:first-child,
+.home-gallery .text-center > p,
+.home-specialist-section .text-center > p {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.home-about-features {
+    margin-top: 1.5rem;
+}
+
+.home-about-feature {
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 79, 157, 0.14);
+    border-radius: 14px;
+    background: var(--bs-white);
+    box-shadow: 0 8px 24px rgba(28, 26, 29, 0.04);
+}
+
+.home-about-feature > i {
+    flex: 0 0 auto;
+    margin-top: 0.15rem;
+}
+
+.home-about-feature p {
+    color: #6c6870;
+}
+
+.home-gallery {
+    background: #fff8fb;
+}
+
+.home-gallery .tab-class > .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 2rem !important;
+}
+
+.home-gallery .tab-class .nav-item {
+    padding: 0;
+}
+
+.home-gallery .tab-class .nav-item a {
+    margin: 0 !important;
+    min-width: 130px;
+    justify-content: center;
+    padding: 0.65rem 1rem !important;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.home-gallery .tab-class .nav-item span {
+    width: auto !important;
+}
+
+.home-gallery .gallery-img {
+    height: 100%;
+    border-radius: 14px;
+    background: var(--bs-white);
+    box-shadow: 0 8px 24px rgba(28, 26, 29, 0.08);
+}
+
+.home-gallery .gallery-img img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.home-gallery .gallery-img:hover img {
+    transform: scale(1.04);
+}
+
+.home-gallery .gallery-overlay {
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(transparent 35%, rgba(28, 26, 29, 0.65)) !important;
+}
+
+.home-gallery .gallery-overlay h4 {
+    margin-bottom: 0;
+    color: var(--bs-white) !important;
+}
+
+.home-specialist-section {
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f9 100%);
+}
+
+.home-specialist-card {
+    border-radius: 16px;
+    background: var(--bs-white);
+    box-shadow: 0 16px 38px rgba(28, 26, 29, 0.12);
+}
+
+.home-specialist-card .team-img img {
+    height: 340px;
+    object-fit: cover;
+}
+
+.home-specialist-card .team-img::after {
+    display: none;
+}
+
+.home-specialist-card .team-text {
+    padding: 1.5rem !important;
+}
+
+.home-services-section,
+.home-about-section,
+.home-gallery,
+.home-specialist-section,
+.home-contact-section {
+    position: relative;
+    border-bottom: 1px solid rgba(180, 68, 112, 0.12);
+}
+
+.home-services-section {
+    background: linear-gradient(145deg, #fff1f6 0%, #ffe8f0 100%);
+}
+
+.home-about-section {
+    background: linear-gradient(145deg, #fff7fa 0%, #ffeef4 100%);
+}
+
+.home-gallery {
+    background: linear-gradient(160deg, #ffedf4 0%, #fff5f8 100%);
+}
+
+.home-specialist-section {
+    background: linear-gradient(145deg, #fff4f8 0%, #ffe9f1 100%);
+}
+
+.home-contact-section {
+    background: linear-gradient(160deg, #fff0f5 0%, #fff7f9 100%);
+}
+
+.home-services-section::after,
+.home-about-section::after,
+.home-gallery::after,
+.home-specialist-section::after,
+.home-contact-section::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 76px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--bs-primary);
+    content: "";
+    opacity: 0.55;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 991.98px) {
+    .home-about-main {
+        height: 420px;
+    }
+
+    .home-about-detail {
+        height: 165px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-about-section > .container,
+    .home-gallery > .container,
+    .home-specialist-section > .container {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .home-about-visual {
+        padding-right: 28px;
+        padding-bottom: 34px;
+    }
+
+    .home-about-main {
+        height: 330px;
+    }
+
+    .home-about-detail {
+        height: 130px;
+        border-width: 5px;
+    }
+
+    .home-about-badge {
+        top: 14px;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .home-gallery .tab-class .nav-item a {
+        min-width: 0;
+        padding: 0.55rem 0.8rem !important;
+    }
+
+    .home-specialist-card .team-img img {
+        height: 300px;
+    }
+}
+/*** Home Page Feature Sections End ***/
