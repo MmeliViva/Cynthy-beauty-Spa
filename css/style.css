@@ -733,3 +733,95 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+/*** Price List Start ***/
+.price-list-section {
+    background: #fff0f6;
+}
+
+.price-list-heading {
+    max-width: 720px;
+}
+
+.price-list-heading > p:first-child {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.price-list-card {
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 79, 157, 0.2);
+    border-top: 4px solid var(--bs-primary);
+    border-radius: 12px;
+    background: var(--bs-white);
+    box-shadow: 0 8px 24px rgba(28, 26, 29, 0.06);
+}
+
+.price-list-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--bs-secondary);
+    font-size: 1.25rem;
+}
+
+.price-list-card h3 i {
+    color: var(--bs-primary);
+}
+
+.price-list-subtitle {
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--bs-secondary);
+    font-style: italic;
+}
+
+.price-list-table {
+    --bs-table-bg: transparent;
+    --bs-table-border-color: rgba(136, 76, 210, 0.12);
+    color: var(--bs-dark);
+    font-size: 0.9rem;
+}
+
+.price-list-table th,
+.price-list-table td {
+    padding: 0.65rem 0.3rem;
+    vertical-align: middle;
+}
+
+.price-list-table thead th {
+    color: var(--bs-secondary);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.price-list-table tbody th {
+    font-weight: 600;
+}
+
+.price-list-table td {
+    text-align: right;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.price-list-single {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0.3rem;
+    border-top: 1px solid rgba(136, 76, 210, 0.12);
+}
+
+.price-list-single strong {
+    color: var(--bs-secondary);
+}
+
+@media (max-width: 575.98px) {
+    .price-list-card {
+        padding: 1.25rem;
+    }
+
+    .price-list-table {
+        font-size: 0.85rem;
+    }
+}
+/*** Price List End ***/
