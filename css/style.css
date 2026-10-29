@@ -52,6 +52,42 @@ h6,
     z-index: 99;
 }
 
+.sticky-booking {
+    position: fixed;
+    right: 24px;
+    bottom: 88px;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.25rem;
+    border: 0;
+    border-radius: 999px;
+    background: #198754;
+    box-shadow: 0 8px 24px rgba(28, 26, 29, 0.2);
+    color: var(--bs-white);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.sticky-booking:hover,
+.sticky-booking:focus-visible {
+    background: #146c43;
+    box-shadow: 0 10px 28px rgba(28, 26, 29, 0.25);
+    color: var(--bs-white);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 575.98px) {
+    .sticky-booking {
+        right: 16px;
+        bottom: 82px;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;
