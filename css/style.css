@@ -712,17 +712,48 @@
     background: var(--bs-dark);
 }
 
+.footer .row > div:first-child {
+    display: none;
+}
+
+.footer .row > div[class*="col-xl-"] {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
 .footer .footer-item a,
 .footer .footer-item p {
     color: var(--bs-white);
-    line-height: 40px;
+    line-height: 1.7;
     font-size: 17px;
     transition: 0.5s;
 }
 
+.footer .footer-item a {
+    padding: 0.2rem 0;
+}
+
+.footer .footer-item p {
+    margin-bottom: 0.55rem;
+    overflow-wrap: anywhere;
+}
+
 .footer .footer-item a:hover {
-    letter-spacing: 2px;
     color: var(--bs-primary) !important;
+}
+
+@media (max-width: 1199.98px) {
+    .footer .row > div[class*="col-xl-"] {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer .row > div[class*="col-xl-"] {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 
 /*** Footer End ***/

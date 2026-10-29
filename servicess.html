@@ -115,6 +115,43 @@
             margin-right: auto;
         }
 
+        .site-footer {
+            padding: 48px 24px;
+            background: var(--dark-charcoal);
+            color: var(--white);
+        }
+
+        .site-footer-inner {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 40px;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .site-footer h2 {
+            margin-bottom: 16px;
+            color: #f58bb5;
+            font-size: 18px;
+        }
+
+        .site-footer p,
+        .site-footer a {
+            display: block;
+            margin: 0 0 10px;
+            color: var(--white);
+            font-size: 15px;
+            overflow-wrap: anywhere;
+        }
+
+        .site-footer a {
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            color: #f58bb5;
+        }
+
         /* Interactive Buttons */
         .cta-group {
             display: flex;
@@ -173,6 +210,13 @@
                 padding: 15px 20px;
             }
         }
+
+        @media (max-width: 640px) {
+            .site-footer-inner {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -208,6 +252,31 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <section>
+                <h2>Our Services</h2>
+                <a href="price.html">Manicure</a>
+                <a href="price.html">Pedicure</a>
+                <a href="price.html">Bio Sculpture</a>
+                <a href="price.html">Acrylic &amp; Gel Nails</a>
+                <a href="price.html">Nail Art</a>
+            </section>
+            <section>
+                <h2>Opening Hours &amp; Location</h2>
+                <p>Monday–Friday: 08:30–16:00</p>
+                <p>Saturday: 08:30–14:30</p>
+                <p>Sunday: Closed</p>
+                <p>64 Dan Pienaar Circle, Plumstead</p>
+            </section>
+            <section>
+                <h2>Contact &amp; Bookings</h2>
+                <a href="https://wa.me/27728511337" target="_blank" rel="noopener noreferrer">WhatsApp: 072 851 1337</a>
+                <p>Bookings by appointment</p>
+            </section>
+        </div>
+    </footer>
 
 </body>
 </html>
